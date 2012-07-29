@@ -98,6 +98,50 @@
                 {% endfor %}
             </div>
         </section>
+        <div id="about" class='prev-container'>
+            <div class='heading'>
+                <h2><span>What is PennApps?</span></h2>
+            </div>
+
+            <div class='about'>
+                <p><span class='dark'>PennApps is the University of Pennsylvania's 48-hour long hackathon,
+                    <br>open to all current students regardless of university or year.</span></p>
+                <br>
+            </div>
+
+            <div class="video">
+                <img id="video_image" src="img/video_gray.png">
+                <div id="youtube"></div>
+            </div>
+
+            <div class='about'>
+                <p>"I think this is my sixteenth or seventeenth [hackathon], 
+                <br>and this is definitely the best one yet."
+                <br>- Sameem, Rutgers University '13 </p>
+                <br>
+                <p>First Place:  <span class="dark">$4,000, a trip to Google NYC, and more</span></p>
+                <p>Second Place: <span class="dark">$2,000</span></p>
+                <p>Third Place:  <span class="dark">$1,000</span></p>
+                <p>And over <span class="dark">$5000</span> in additional prizes.</p>
+                <br>
+                <p>Coming from out of town? We'll reimburse your bus tickets.</p>
+                <p>Questions? Check the <a class='dark' href='faq.html'>FAQ</a>.</p>
+
+            </div>
+        </div>
+        <section id="mezzanine" class="sponsors">
+            <div class="page-header"></div>
+            <div class="row">
+                {% for sponsor in mezzanine %}
+                <div class="span4">
+                    <a href="{{ sponsor.href }}">
+                    <div class="sponsor {{ sponsor.name }}">
+                    </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
         <section id="reasons">
             <div class="page-header"></div>
             <h1>Eat. <span class="not">Sleep.</span> Code.</h1>
@@ -154,50 +198,6 @@
                 </div>
             </div>
         </section>
-        <section id="mezzanine" class="sponsors">
-            <div class="page-header"></div>
-            <div class="row">
-                {% for sponsor in mezzanine %}
-                <div class="span4">
-                    <a href="{{ sponsor.href }}">
-                    <div class="sponsor {{ sponsor.name }}">
-                    </div>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
-        <div id="about" class='prev-container'>
-            <div class='heading'>
-                <h2><span>What is PennApps?</span></h2>
-            </div>
-
-            <div class='about'>
-                <p><span class='dark'>PennApps is the University of Pennsylvania's 48-hour long hackathon,
-                    <br>open to all current students regardless of university or year.</span></p>
-                <br>
-            </div>
-
-            <div class="video">
-                <img id="video_image" src="img/video_gray.png">
-                <div id="youtube"></div>
-            </div>
-
-            <div class='about'>
-                <p>"I think this is my sixteenth or seventeenth [hackathon], 
-                <br>and this is definitely the best one yet."
-                <br>- Sameem, Rutgers University '13 </p>
-                <br>
-                <p>First Place:  <span class="dark">$4,000, a trip to Google NYC, and more</span></p>
-                <p>Second Place: <span class="dark">$2,000</span></p>
-                <p>Third Place:  <span class="dark">$1,000</span></p>
-                <p>And over <span class="dark">$5000</span> in additional prizes.</p>
-                <br>
-                <p>Coming from out of town? We'll reimburse your bus tickets.</p>
-                <p>Questions? Check the <a class='dark' href='faq.html'>FAQ</a>.</p>
-
-            </div>
-        </div>
         <section id="series-a" class="sponsors">
             <div class="page-header"></div>
             <div class="row">
@@ -348,7 +348,8 @@
                 {% endfor %}
             </div>
         </section>
-        <section id"signup">
+        <section id="signup">
+            <div class="page-header"></div>
             <div class="signup">
                 <div class="circle">
                     <a target="_blank" href="http://launchrock.com/">          
