@@ -1,0 +1,25 @@
+.sponsor {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  padding: 10px; }
+  .sponsor.ipo {
+    width: 350px; }
+  .sponsor.mezzanine {
+    width: 250px; }
+  .sponsor.series-a {
+    width: 150px; }
+  .sponsor.seed {
+    width: 100px; }
+
+.facebook {
+  background-color: #2b579e; }
+
+.mongodb {
+  background-color: #3c2919; }
+
+.tumblr {
+  background-color: #2c4762; }
