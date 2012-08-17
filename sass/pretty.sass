@@ -154,16 +154,34 @@ $pennapps-red: #D80000
         margin-left: 0
         padding: 10px
 
-.navbar
-    .signup
-        > li
-            > a
-                padding: 0px
-
-#prizes
     .details
         text-align: center
 
         h1
             font-size: 4em
             line-height: 1em
+
+#global-nav
+    $start: #EEE
+    $end: white
+    .navbar-inner
+        background-color: white
+        // TODO: Better cross browser support
+        background-image: -webkit-linear-gradient(top, $start, $end)
+        background-image: linear-gradient(top, $start, $end)
+        border-bottom: #DDD solid 1px
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)
+    .nav
+        .active
+            > a
+                color: #444
+                background-color: $start
+        > li
+            > a
+                color: #444
+
+.navbar
+    .signup
+        > li
+            > a
+                padding: 0px
